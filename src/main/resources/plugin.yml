@@ -1,0 +1,33 @@
+name: HoplitePlugin
+version: 1.0.0
+main: com.hoplite.HoplitePlugin
+api-version: 1.21
+description: Hoplite-style team PvP plugin with classes, safe zone border, and countdown
+authors: [HoplitePlugin]
+
+commands:
+  hoplite:
+    description: Main Hoplite command
+    usage: /hoplite
+    aliases: [hp]
+  team:
+    description: Choose your team
+    usage: /team
+  teleport-arena:
+    description: Teleport all players to arena starting positions
+    usage: /teleport-arena
+    aliases: [tparena]
+    permission: hoplite.admin
+  start:
+    description: Start the 3,2,1 countdown and begin the game
+    usage: /start
+    permission: hoplite.admin
+  border:
+    description: Set and manage the safe zone border
+    usage: /border <size|shrink|stop>
+    permission: hoplite.admin
+
+permissions:
+  hoplite.admin:
+    description: Admin permission for Hoplite commands
+    default: op
