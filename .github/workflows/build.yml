@@ -1,5 +1,9 @@
 name: Build HoplitePlugin
-on: [push, workflow_dispatch]
+
+on:
+  push:
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
