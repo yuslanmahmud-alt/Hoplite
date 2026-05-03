@@ -1,0 +1,35 @@
+name: HoplitePlugin
+version: 2.0.0
+main: com.hoplite.HoplitePlugin
+api-version: 1.21
+description: Hoplite PvP Plugin v2 - MrBeast Hunger Games style
+
+commands:
+  team:
+    description: Team management
+    usage: /team <create|join <1-5>|list|leave>
+  setcenter:
+    description: Set arena center at your current location
+    usage: /setcenter
+    permission: hoplite.admin
+  tparena:
+    description: Teleport all players into their cages
+    usage: /tparena
+    permission: hoplite.admin
+  start:
+    description: Start the 3,2,1 countdown
+    usage: /start
+    permission: hoplite.admin
+  border:
+    description: Manage safe zone border
+    usage: /border <set <size>|shrink <size> <seconds>|stop|info>
+    permission: hoplite.admin
+  restart:
+    description: Reset the entire game without restarting server
+    usage: /restart
+    permission: hoplite.admin
+
+permissions:
+  hoplite.admin:
+    description: Admin permission for Hoplite
+    default: op

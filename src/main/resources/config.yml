@@ -1,0 +1,25 @@
+arena:
+  center:
+    world: world
+    x: 0.5
+    y: 64
+    z: 0.5
+  # Distance from center to each cage in blocks
+  cage-radius: 50
+  max-teams: 5
+
+border:
+  # Initial border half-size in blocks from center
+  initial-size: 200
+  # Damage per second when outside border
+  damage-per-second: 0.5
+
+glow:
+  # Radius in blocks for teammates to see each other glow
+  radius: 50
+
+assassin:
+  # Invisible duration in seconds when sneaking
+  invisible-duration: 10
+  # Cooldown in seconds before skill can be used again
+  cooldown: 20
